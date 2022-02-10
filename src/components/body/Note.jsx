@@ -1,13 +1,10 @@
 import React from "react";
 
-let Note = () => {
+let Note = (props) => {
   return (
     <div className="note">
-      <h1>Just some random title</h1>
-      <p>
-        Here is a note I made just from the bottom of my heart. I do really hope
-        you love it!
-      </p>
+      <h1>{props.title}</h1>
+      <p>{props.note}</p>
     </div>
   );
 };

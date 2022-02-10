@@ -7,7 +7,11 @@ let App = () => {
   return (
     <div>
       <Header />
-      <Note />
+      <Note
+        title="Just some random title"
+        note="Here is a note I made just from the bottom of my heart. I do really hope
+        you love it!"
+      />
       <Footer />
     </div>
   );
