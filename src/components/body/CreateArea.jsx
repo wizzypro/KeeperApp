@@ -5,6 +5,7 @@ function CreateArea(props) {
     title: "",
     content: "",
   });
+  const [formValid, setFormValid] = useState(false);
 
   function handleNote(event) {
     const { name, value } = event.target;
@@ -21,6 +22,12 @@ function CreateArea(props) {
         };
       }
     });
+
+    if (note.title !== "" && note.content !== "") {
+      setFormValid(true);
+    } else {
+      setFormValid(false);
+    }
   }
   return (
     <div>
@@ -46,7 +53,9 @@ function CreateArea(props) {
               title: "",
               content: "",
             });
+            setFormValid(false);
           }}
+          disabled={!formValid}
         >
           Add
         </button>

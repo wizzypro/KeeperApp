@@ -37,6 +37,9 @@ footer p {
 }
 .note {
   background: #fff;
+  background: #f1f5f8;
+  background-image: radial-gradient(#bfc0c1 7.2%, transparent 0);
+  background-size: 25px 25px;
   border-radius: 7px;
   box-shadow: 0 2px 5px #ccc;
   padding: 10px;
@@ -71,10 +74,12 @@ form {
   position: relative;
   width: 480px;
   margin: 30px auto 20px auto;
-  background: #fff;
+  background: #f1f5f8;
   padding: 15px;
   border-radius: 7px;
   box-shadow: 0 1px 5px rgb(138, 137, 137);
+  background-image: radial-gradient(#bfc0c1 7.2%, transparent 0);
+  background-size: 25px 25px;
 }
 form input,
 form textarea {
@@ -85,6 +90,9 @@ form textarea {
   font-size: 1.2em;
   font-family: inherit;
   resize: none;
+  background: #f1f5f8;
+  background-image: radial-gradient(#bfc0c1 7.2%, transparent 0);
+  background-size: 25px 25px;
 }
 form button {
   position: absolute;
